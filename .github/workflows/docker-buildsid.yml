@@ -1,4 +1,4 @@
-name: USERBOT BUILD DOCKER 
+name: USERBOT BUILD DOCKER SID
 on:
   push:
     branches:
@@ -17,14 +17,14 @@ jobs:
       uses: docker/build-push-action@v2.6.1
       with:
         context: .
-        file: ./Dockerfile
+        file: ./Dockerfilesid
         platforms: linux/amd64
         push: true
-        tags: narima/nekadok:bullseye
+        tags: narima/nekadok:sid
         
     - name: send telegram message
       run: |
           function sendTG() {
           curl -s "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendmessage" --data "text=${*}&chat_id=${{ secrets.TELEGRAM_TO }}&parse_mode=Markdown"
           }
-          sendTG "\`I have pushed new images to docker\` %0A[Image are here](https://hub.docker.com/r/narima/nekadok/tags)" &> /dev/null
+          sendTG "\`I have pushed new images to docker sid\` %0A[Image are here](https://hub.docker.com/r/narima/nekadok/tags)" &> /dev/null
