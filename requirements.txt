@@ -7,7 +7,7 @@ CairoSVG
 cffi
 covid
 cowpy
-deezloader
+pydeezloader
 dnspython
 emoji
 gitpython
@@ -45,8 +45,8 @@ python-dotenv
 pytz
 qrcode
 rarfile
-scipy
 requests
+scipy
 git+https://github.com/Ncode2014/search-engine-parser
 git+https://github.com/ytdl-org/youtube-dl
 speedtest-cli
@@ -57,6 +57,10 @@ telethon-session-sqlalchemy
 urbandict
 validators
 vcsi
+numpy
+Pillow
+eksipy
+pydub
 wikipedia
 wordcloud
 youtube_search
