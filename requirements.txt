@@ -21,7 +21,7 @@ gTTS
 gTTS-token
 hachoir
 hentai
-git+https://github.com/Ncode2014/heroku3.py
+heroku3
 html_telegraph_poster
 httplib2
 humanize
