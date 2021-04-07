@@ -13,6 +13,7 @@ emoji
 gitpython
 glitch_this
 google-api-python-client
+twitter_scraper
 google-auth-httplib2
 google-auth-oauthlib
 google_images_download
