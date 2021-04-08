@@ -13,7 +13,6 @@ emoji
 gitpython
 glitch_this
 google-api-python-client
-git+https://github.com/Ncode2014/twitterscraper
 google-auth-httplib2
 google-auth-oauthlib
 google_images_download
