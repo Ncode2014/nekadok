@@ -7,7 +7,7 @@ CairoSVG
 cffi
 covid
 cowpy
-deezloader
+git+https://github.com/TheDeezLoader/pyDeezloader
 dnspython
 emoji
 gitpython
