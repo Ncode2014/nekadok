@@ -10,7 +10,7 @@ cowpy
 git+https://github.com/TheDeezLoader/pyDeezloader
 git+https://github.com/rthalley/dnspython
 emoji
-gitpython
+git+https://github.com/gitpython-developers/GitPython
 glitch_this
 google-api-python-client
 google-auth-httplib2
@@ -34,7 +34,7 @@ natsort
 nekos.py
 oauth2client
 pendulum
-git+https://github.com/python-pillow/Pillow
+Pillow
 psycopg2
 psycopg2-binary
 pybase64
