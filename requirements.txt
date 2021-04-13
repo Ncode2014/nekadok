@@ -8,7 +8,7 @@ cffi
 covid
 cowpy
 git+https://github.com/TheDeezLoader/pyDeezloader
-dnspython
+git+https://github.com/rthalley/dnspython
 emoji
 gitpython
 glitch_this
@@ -19,7 +19,7 @@ google_images_download
 googletrans==3.1.0a0
 gTTS
 gTTS-token
-hachoir
+git+https://github.com/vstinner/hachoir
 git+https://github.com/Ncode2014/hentai
 heroku3
 html_telegraph_poster
@@ -34,7 +34,7 @@ natsort
 nekos.py
 oauth2client
 pendulum
-Pillow
+git+https://github.com/python-pillow/Pillow
 psycopg2
 psycopg2-binary
 pybase64
