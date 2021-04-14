@@ -10,7 +10,7 @@ cowpy
 git+https://github.com/TheDeezLoader/pyDeezloader
 git+https://github.com/rthalley/dnspython
 emoji
-git+https://github.com/gitpython-developers/GitPython
+gitpython
 glitch_this
 google-api-python-client
 google-auth-httplib2
