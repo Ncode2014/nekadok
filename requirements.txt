@@ -15,7 +15,7 @@ glitch_this
 google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
-google_images_download
+git+https://github.com/Joeclinton1/google-images-download
 googletrans==3.1.0a0
 gTTS
 gTTS-token
@@ -23,8 +23,8 @@ git+https://github.com/vstinner/hachoir
 git+https://github.com/Ncode2014/hentai
 heroku3
 html_telegraph_poster
-httplib2
-humanize
+git+https://github.com/httplib2/httplib2
+git+https://github.com/jmoiron/humanize
 jikanpy
 js2py
 lottie
