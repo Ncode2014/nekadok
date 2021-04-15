@@ -64,5 +64,5 @@ eksipy
 pydub
 wikipedia
 wordcloud
-youtube_search
+youtube-search
 telethon-tgcrypto
