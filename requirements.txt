@@ -39,7 +39,7 @@ psycopg2
 psycopg2-binary
 pybase64
 pylast
-pySmartDL
+git+https://github.com/Ncode2014/pySmartDL
 python-barcode
 python-dateutil
 python-dotenv
