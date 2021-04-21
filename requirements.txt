@@ -1,5 +1,6 @@
 aiohttp[speedups]
 appdirs
+aiofile
 git+https://github.com/pawamoy/aria2p
 async_generator
 bs4
