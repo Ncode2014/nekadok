@@ -9,6 +9,7 @@ covid
 cowpy
 eksipy
 emoji
+faker
 git+https://github.com/httplib2/httplib2
 git+https://github.com/jmoiron/humanize
 git+https://github.com/Joeclinton1/google-images-download
