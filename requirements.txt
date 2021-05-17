@@ -9,7 +9,8 @@ covid
 cowpy
 eksipy
 emoji
-faker
+Faker==8.1.2
+geopy
 git+https://github.com/httplib2/httplib2
 git+https://github.com/jmoiron/humanize
 git+https://github.com/Joeclinton1/google-images-download
@@ -20,7 +21,7 @@ git+https://github.com/Ncode2014/search-engine-parser
 git+https://github.com/Ncode2014/youtube_search
 git+https://github.com/pawamoy/aria2p
 git+https://github.com/rthalley/dnspython
-git+https://github.com/TheDeezLoader/pyDeezloader
+git+https://github.com/Ncode2014/pyDeezloader
 git+https://github.com/vstinner/hachoir
 git+https://github.com/ytdl-org/youtube-dl
 gitpython
@@ -42,6 +43,7 @@ natsort
 numpy
 oauth2client
 pendulum
+Pillow
 Pillow
 psycopg2
 psycopg2-binary
