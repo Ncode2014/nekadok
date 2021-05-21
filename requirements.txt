@@ -26,6 +26,7 @@ git+https://github.com/vstinner/hachoir
 git+https://github.com/ytdl-org/youtube-dl
 gitpython
 glitch_this
+geopy
 google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
