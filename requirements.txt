@@ -9,7 +9,6 @@ covid
 cowpy
 eksipy
 emoji
-Faker==8.1.2
 geopy
 git+https://github.com/httplib2/httplib2
 git+https://github.com/jmoiron/humanize
@@ -21,12 +20,11 @@ git+https://github.com/Ncode2014/search-engine-parser
 git+https://github.com/Ncode2014/youtube_search
 git+https://github.com/pawamoy/aria2p
 git+https://github.com/rthalley/dnspython
-git+https://github.com/Ncode2014/pyDeezloader
+git+https://github.com/TheDeezLoader/pyDeezloader
 git+https://github.com/vstinner/hachoir
 git+https://github.com/ytdl-org/youtube-dl
 gitpython
 glitch_this
-geopy
 google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
