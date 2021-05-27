@@ -22,7 +22,7 @@ git+https://github.com/pawamoy/aria2p
 git+https://github.com/rthalley/dnspython
 git+https://github.com/TheDeezLoader/pyDeezloader
 git+https://github.com/vstinner/hachoir
-git+https://github.com/yt-dlp/yt-dlp
+https://raw.githubusercontent.com/Ncode2014/nekadok/req/heroku-dlp-master.zip
 gitpython
 glitch_this
 google-api-python-client
