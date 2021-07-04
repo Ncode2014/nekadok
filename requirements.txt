@@ -10,6 +10,7 @@ cowpy
 eksipy
 emoji
 geopy
+faker
 git+https://github.com/httplib2/httplib2
 git+https://github.com/jmoiron/humanize
 git+https://github.com/Joeclinton1/google-images-download
@@ -45,6 +46,7 @@ pendulum
 Pillow
 Pillow
 psycopg2
+py7zr
 psycopg2-binary
 pybase64
 pydub
