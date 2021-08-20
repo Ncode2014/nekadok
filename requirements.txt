@@ -11,6 +11,7 @@ eksipy
 emoji
 geopy
 faker
+https://github.com/Ncode2014/cloudscraper/archive/refs/heads/master.zip
 git+https://github.com/httplib2/httplib2
 git+https://github.com/jmoiron/humanize
 git+https://github.com/Joeclinton1/google-images-download
@@ -29,7 +30,7 @@ glitch_this
 google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
-googletrans==3.1.0a0
+googletrans==4.0.0rc1
 gTTS
 gTTS-token
 heroku3
@@ -37,6 +38,7 @@ html_telegraph_poster
 jikanpy
 js2py
 lottie
+lk21
 lxml
 lyricsgenius
 natsort
