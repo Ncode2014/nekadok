@@ -70,4 +70,5 @@ urbandict
 validators
 vcsi
 wikipedia
+youtube_dl
 wordcloud
