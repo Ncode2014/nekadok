@@ -35,6 +35,7 @@ gTTS
 gTTS-token
 heroku3
 html_telegraph_poster
+html5lib
 jikanpy
 js2py
 lottie
