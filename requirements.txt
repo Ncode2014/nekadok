@@ -7,6 +7,7 @@ CairoSVG
 cffi
 covid
 cowpy
+deezloader
 eksipy
 emoji
 faker
@@ -21,7 +22,6 @@ git+https://github.com/Ncode2014/search-engine-parser
 git+https://github.com/Ncode2014/youtube_search
 git+https://github.com/pawamoy/aria2p
 git+https://github.com/rthalley/dnspython
-git+https://github.com/TomyPrs/deezloader
 git+https://github.com/vstinner/hachoir
 gitpython
 glitch_this
