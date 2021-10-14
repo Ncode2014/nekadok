@@ -42,6 +42,7 @@ lk21
 lottie
 lxml
 lyricsgenius
+markdown
 natsort
 numpy
 oauth2client
