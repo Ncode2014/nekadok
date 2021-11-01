@@ -20,7 +20,7 @@ jobs:
         file: ./Dockerfile
         platforms: linux/amd64
         push: true
-        tags: narima/nekadok:bullseye
+        tags: nekru/riam:ubot
         
     - name: send telegram message
       run: |

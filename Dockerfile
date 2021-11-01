@@ -1,12 +1,13 @@
-FROM narima/base:bull
+FROM nekru/base:bull
 
 ENV DEBIAN_FRONTEND noninteractive
 
 # add Experimental Package & Install Google Chrome
 ADD https://raw.githubusercontent.com/Ncode2014/nekadok/req/requirements.txt requirements.txt
 RUN set -ex \
-    && echo deb http://http.us.debian.org/debian/ testing non-free contrib main > /etc/apt/sources.list \
-    && apt-get -qq update \
+    && echo "deb http://ftp.debian.org/debian testing non-free contrib main" > /etc/apt/sources.list \
+    && echo "deb-src http://deb.debian.org/debian testing non-free main contrib" > /etc/apt/sources.list \
+    && apt-get -qq -o Acquire::Check-Valid-Until=false -o Acquire::Check-Date=false -o Acquire::Max-FutureTime=86400 update  \
     && apt-get -qq -y install --no-install-recommends \
         apt-utils \
         aria2 \
@@ -39,7 +40,7 @@ RUN set -ex \
     && apt-get -qq update \
 
     # Install chromedriver
-    && wget -N https://chromedriver.storage.googleapis.com/$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE_95)/chromedriver_linux64.zip -P ~/ \
+    && wget -N https://chromedriver.storage.googleapis.com/$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE_97)/chromedriver_linux64.zip -P ~/ \
     && unzip ~/chromedriver_linux64.zip -d ~/ \
     && rm ~/chromedriver_linux64.zip \
     && mv -f ~/chromedriver /usr/bin/chromedriver \
@@ -50,6 +51,8 @@ RUN set -ex \
     && pip3 install --upgrade pip \
     && pip3 install -r requirements.txt --use-feature=2020-resolver \
     && rm -f requirements.txt \
+    # hacky method
+    && pip3 uninstall fake-useragent -y && pip3 install --force-reinstall git+https://github.com/nekaru-storage/fake-useragent \
     && pip3 install gdown \
     && pip3 cache purge \
 
