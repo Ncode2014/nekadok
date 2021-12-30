@@ -7,24 +7,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.3.4
+    - uses: actions/checkout@v2.4.0
     - name: Login to Docker Hub
-      uses: docker/login-action@v1.10.0
+      uses: docker/login-action@v1.12.0
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
     - name: Build and Publish to Dockerhub
-      uses: docker/build-push-action@v2.6.1
+      uses: docker/build-push-action@v2.7.0
       with:
         context: .
         file: ./Dockerfile
         platforms: linux/amd64
         push: true
         tags: nekru/riam:ubot
-        
-    - name: send telegram message
-      run: |
-          function sendTG() {
-          curl -s "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendmessage" --data "text=${*}&chat_id=${{ secrets.TELEGRAM_TO }}&parse_mode=Markdown"
-          }
-          sendTG "\`I have pushed new images to docker\` %0A[Image are here](https://hub.docker.com/r/narima/nekadok/tags)" &> /dev/null
+

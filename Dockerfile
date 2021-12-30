@@ -5,8 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # add Experimental Package & Install Google Chrome
 ADD https://raw.githubusercontent.com/Ncode2014/nekadok/req/requirements.txt requirements.txt
 RUN set -ex \
-    && echo "deb http://ftp.debian.org/debian testing non-free contrib main" > /etc/apt/sources.list \
-    && echo "deb-src http://deb.debian.org/debian testing non-free main contrib" > /etc/apt/sources.list \
+    && echo "deb http://ftp.debian.org/debian/ testing non-free contrib main" > /etc/apt/sources.list \
     && apt-get -qq -o Acquire::Check-Valid-Until=false -o Acquire::Check-Date=false -o Acquire::Max-FutureTime=86400 update  \
     && apt-get -qq -y install --no-install-recommends \
         apt-utils \
@@ -40,7 +39,7 @@ RUN set -ex \
     && apt-get -qq update \
 
     # Install chromedriver
-    && wget -N https://chromedriver.storage.googleapis.com/$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE_97)/chromedriver_linux64.zip -P ~/ \
+    && wget -N https://chromedriver.storage.googleapis.com/$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE_98)/chromedriver_linux64.zip -P ~/ \
     && unzip ~/chromedriver_linux64.zip -d ~/ \
     && rm ~/chromedriver_linux64.zip \
     && mv -f ~/chromedriver /usr/bin/chromedriver \
@@ -68,7 +67,7 @@ RUN set -ex \
     && cp -v rar unrar ffmpeg megatools ffprobe /usr/bin \
     && cp -v rarfiles.lst /etc && cp -v default.sfx /usr/lib \
     && chmod +x /usr/bin/ffmpeg /usr/bin/rar /usr/bin/unrar /usr/bin/megatools /usr/bin/ffprobe \
-    && rm -rf nekadok \
+    && rm -rf nekadok/ \
     && rm -f nekadok.tar.gz \
 
     # Cleanup
