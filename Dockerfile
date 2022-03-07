@@ -39,7 +39,7 @@ RUN set -ex \
     && apt-get -qq update \
 
     # Install chromedriver
-    && wget -N https://chromedriver.storage.googleapis.com/$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE_98)/chromedriver_linux64.zip -P ~/ \
+    && wget -N https://chromedriver.storage.googleapis.com/$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE_99)/chromedriver_linux64.zip -P ~/ \
     && unzip ~/chromedriver_linux64.zip -d ~/ \
     && rm ~/chromedriver_linux64.zip \
     && mv -f ~/chromedriver /usr/bin/chromedriver \
