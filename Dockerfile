@@ -5,6 +5,8 @@ ENV DEBIAN_FRONTEND noninteractive
 # add Experimental Package & Install Google Chrome
 ADD https://raw.githubusercontent.com/Ncode2014/leaf-ubot/master/requirements.txt requirements.txt
 RUN set -ex \
+    && apt-get update \
+    && apt-get -qq -y install --no-install-recommends libwebp6 \
     && echo "deb http://ftp.debian.org/debian/ testing non-free contrib main" > /etc/apt/sources.list \
     && apt-get -qq -o Acquire::Check-Valid-Until=false -o Acquire::Check-Date=false -o Acquire::Max-FutureTime=86400 update  \
     && apt-get -qq -y install --no-install-recommends \
@@ -19,7 +21,6 @@ RUN set -ex \
         jq \
         libpq-dev \
         libssl-dev \
-        libwebp6 \
         libxml2 \
         neofetch \
         postgresql \
