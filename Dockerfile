@@ -3,7 +3,7 @@ FROM nekru/base:bull
 ENV DEBIAN_FRONTEND noninteractive
 
 # add Experimental Package & Install Google Chrome
-ADD https://raw.githubusercontent.com/Ncode2014/nekadok/req/requirements.txt requirements.txt
+ADD https://raw.githubusercontent.com/Ncode2014/leaf-ubot/master/requirements.txt requirements.txt
 RUN set -ex \
     && echo "deb http://ftp.debian.org/debian/ testing non-free contrib main" > /etc/apt/sources.list \
     && apt-get -qq -o Acquire::Check-Valid-Until=false -o Acquire::Check-Date=false -o Acquire::Max-FutureTime=86400 update  \
@@ -39,7 +39,7 @@ RUN set -ex \
     && apt-get -qq update \
 
     # Install chromedriver
-    && wget -N https://chromedriver.storage.googleapis.com/$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE_99)/chromedriver_linux64.zip -P ~/ \
+    && wget -N https://chromedriver.storage.googleapis.com/$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE_100)/chromedriver_linux64.zip -P ~/ \
     && unzip ~/chromedriver_linux64.zip -d ~/ \
     && rm ~/chromedriver_linux64.zip \
     && mv -f ~/chromedriver /usr/bin/chromedriver \
@@ -48,10 +48,10 @@ RUN set -ex \
 
     # Install Python modules
     && pip3 install --upgrade pip \
-    && pip3 install -r requirements.txt --use-feature=2020-resolver \
+    && pip3 install --no-cache-dir -r requirements.txt --use-feature=2020-resolver \
     && rm -f requirements.txt \
     # hacky method
-    && pip3 uninstall fake-useragent -y && pip3 install --force-reinstall git+https://github.com/nekaru-storage/fake-useragent \
+    && pip3 uninstall fake-useragent -y && pip3 install --no-cache-dir --force-reinstall git+https://github.com/nekaru-storage/fake-useragent \
     && pip3 install gdown \
     && pip3 cache purge \
 
